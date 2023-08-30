@@ -1,11 +1,13 @@
 <template>
-  <div>
+  <v-main class="mai">
+    <div>sdfsdf</div>
+    <div>sdfdsfsdf</div>
     Я напишу тебе письмо
     {{ counter }}
     <button @click="inc">Увеличить</button>
-    {{ comA }}
+    <span> {{ comA }}</span>
     {{ this.$parent.message }}
-  </div>
+  </v-main>
 </template>
 
 <script>
@@ -28,4 +30,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.mai {
+  display: flex;
+  color: red;
+}
+</style>
