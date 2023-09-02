@@ -5,12 +5,15 @@
     Я напишу тебе письмо
     {{ counter }}
     <button @click="inc">Увеличить</button>
+    {{ a }}
     <span> {{ comA }}</span>
     {{ this.$parent.message }}
   </v-main>
 </template>
 
 <script>
+import { mixinA } from "@/mixins/hell.js";
+
 export default {
   name: "ComponentA",
   props: {
@@ -27,6 +30,7 @@ export default {
       this.$emit("dfg-gfd", 1);
     },
   },
+  mixins: [mixinA],
 };
 </script>
 

@@ -115,6 +115,31 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
+    dffffffffffffffffffffffffffffffffffffffffffffffffffg
+    <template>
+      <v-menu>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn v-bind="attrs" v-on="on"> Click me </v-btn>
+        </template>
+
+        <v-list>
+          <v-list-item>
+            <v-list-item-title>Option 1</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item disabled>
+            <v-list-item-title>Option 2</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title>Option 3</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
+    </template>
+    <template>
+      <v-select :items="['Foo', 'Bar']" label="Items"></v-select>
+    </template>
   </div>
 </template>
 
@@ -165,6 +190,7 @@ export default {
       console.log(v);
     },
     fgt: function () {
+      this.a++;
       console.log(this.a);
       console.log(this.$data);
     },
