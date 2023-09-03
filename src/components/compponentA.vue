@@ -21,7 +21,7 @@ export default {
   },
   data() {
     return {
-      counter: 1,
+      counter: 2,
     };
   },
   methods: {
